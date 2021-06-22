@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linerApp2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/linerga1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/line020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+
+            android:id="@+id/loginName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/soni12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="10dp"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineVertikal0233"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineVertikal0267"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.67" />
+
+    <LinearLayout
+        android:id="@+id/linerLevel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/levelga"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/linerApp2">
+
+        <TextView
+            android:id="@+id/levelSoni2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="-Level"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line0225"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.30" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line0205"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line02075"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.7" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineVerti0205"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <TextView
+        android:id="@+id/san21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/line0225"
+        app:layout_constraintEnd_toEndOf="@id/lineVertikal0233"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linerLevel2" />
+
+    <TextView
+        android:id="@+id/san22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="11"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/line0225"
+        app:layout_constraintEnd_toEndOf="@id/lineVertikal0267"
+        app:layout_constraintStart_toStartOf="@id/lineVertikal0233"
+        app:layout_constraintTop_toBottomOf="@id/linerLevel2" />
+
+
+    <TextView
+        android:id="@+id/san23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="12"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/line0225"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/lineVertikal0267"
+        app:layout_constraintTop_toBottomOf="@id/linerLevel2" />
+
+    <TextView
+        android:id="@+id/amal21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/line0225"
+        app:layout_constraintEnd_toStartOf="@id/lineVertikal0233"
+        app:layout_constraintStart_toEndOf="@id/lineVertikal0233"
+        app:layout_constraintTop_toBottomOf="@id/linerLevel2" />
+
+    <TextView
+        android:id="@+id/amal22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@id/line0225"
+        app:layout_constraintEnd_toStartOf="@id/lineVertikal0267"
+        app:layout_constraintStart_toEndOf="@id/lineVertikal0267"
+        app:layout_constraintTop_toBottomOf="@id/linerLevel2" />
+
+    <Button
+        android:id="@+id/bottom221"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="on02"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/line0205"
+        app:layout_constraintEnd_toEndOf="@id/lineVerti0205"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/line0225" />
+
+    <Button
+        android:id="@+id/bottom222"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="on02"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/line0205"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/lineVerti0205"
+        app:layout_constraintTop_toTopOf="@id/line0225" />
+
+    <Button
+        android:id="@+id/bottom224"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="on02"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/line02075"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/lineVerti0205"
+        app:layout_constraintTop_toTopOf="@id/line0205" />
+
+    <Button
+        android:id="@+id/bottom223"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="on02"
+        android:text=""
+        app:layout_constraintBottom_toBottomOf="@id/line02075"
+        app:layout_constraintEnd_toEndOf="@id/lineVerti0205"
+        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/line0205" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
