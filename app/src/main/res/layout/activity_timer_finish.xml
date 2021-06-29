@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".timerFinish">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/linerApp3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/linerga1"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/line020"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line020"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.06" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.2" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="1" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineVerti03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.2" />
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/lineVerti07"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.8" />
+
+    <ImageButton
+        android:id="@+id/imag1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@id/line03"
+        android:background="@drawable/image"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/lineVerti03"
+        app:layout_constraintBottom_toBottomOf="@id/line07"/>
+    <ImageButton
+        android:layout_marginTop="12dp"
+        android:id="@+id/imag2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/imag1"
+        android:background="@drawable/image1"
+        app:layout_constraintStart_toStartOf="@id/imag1" />
+    <ImageButton
+        android:id="@+id/imag3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:layout_constraintBottom_toTopOf="@id/imag1"
+        android:background="@drawable/image2"
+        android:layout_marginBottom="12dp"
+        app:layout_constraintStart_toStartOf="@id/imag1" />
+
+    <TextView
+        android:id="@+id/text11"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="Savollar soni: "
+        app:layout_constraintBottom_toBottomOf="@id/imag3"
+        app:layout_constraintStart_toEndOf="@id/imag3"
+        app:layout_constraintTop_toTopOf="@id/imag3" />
+    <TextView
+        android:id="@+id/text12"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="@id/text32"
+        app:layout_constraintTop_toTopOf="@id/imag3"
+        app:layout_constraintBottom_toBottomOf="@id/imag3"
+        android:text="0"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/text21"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toEndOf="@id/imag2"
+        app:layout_constraintTop_toTopOf="@id/imag2"
+        app:layout_constraintBottom_toBottomOf="@id/imag2"
+        android:text="Noto'gri javoblar soni: "
+        android:gravity="center"
+        android:layout_marginStart="12dp"
+        />
+    <TextView
+        android:id="@+id/text32"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toEndOf="@id/text21"
+        app:layout_constraintTop_toTopOf="@id/text21"
+        app:layout_constraintBottom_toBottomOf="@id/text21"
+        android:text="0"
+        android:gravity="center"
+        android:layout_marginStart="12dp"
+        />
+
+    <TextView
+        android:id="@+id/text31"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginStart="12dp"
+        android:gravity="center"
+        android:text="To'g'ri javoblar soni: "
+        app:layout_constraintBottom_toBottomOf="@id/imag1"
+        app:layout_constraintStart_toEndOf="@id/imag1"
+        app:layout_constraintTop_toTopOf="@id/imag1" />
+    <TextView
+        android:id="@+id/text22"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        app:layout_constraintStart_toStartOf="@id/text32"
+        app:layout_constraintTop_toTopOf="@id/text31"
+        app:layout_constraintBottom_toBottomOf="@id/text31"
+        android:text="0"
+        android:gravity="center"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/nameTime"
+        app:layout_constraintBottom_toBottomOf="@id/line03"
+        android:text="name"
+        android:gravity="center"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/sizNameTime"
+        app:layout_constraintTop_toBottomOf="@id/nameTime"
+        android:text="siz"
+        android:gravity="center"
+        android:textSize="24sp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/WinElseNot"
+        app:layout_constraintBottom_toTopOf="@id/nameTime"
+        android:text="Yuo Winn!!"
+        android:gravity="center"
+        android:textSize="24sp"
+        />
+
+    <Button
+        android:id="@+id/buttonTime1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@android:drawable/ic_menu_rotate"
+        app:layout_constraintStart_toStartOf="@+id/lineVerti03"
+        app:layout_constraintTop_toTopOf="@+id/line07" />
+
+    <Button
+        android:id="@+id/buttonTime2"
+        android:text="natijalar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="@+id/lineVerti07"
+        app:layout_constraintStart_toEndOf="@+id/buttonTime1"
+        app:layout_constraintTop_toTopOf="@+id/line07" />
+</androidx.constraintlayout.widget.ConstraintLayout>

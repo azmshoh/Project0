@@ -7,21 +7,23 @@ import kotlinx.android.synthetic.main.activity_main2.*
 import kotlin.random.Random
 
 class MainActivity2 : AppCompatActivity() {
-    var tJ =0
+    var tJ = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main2)
         loginName2.text = intent.getStringExtra("n1me")
-        tJ=repall()
+        tJ = repall()
         asosiy()
     }
+
     //random orqali son tanlash
     fun ran(a: Int, b: Int): Int {
         return Random.nextInt(a, b)
     }
+
     //san1 san2 sa3ga  amalga qiymat beradi
     fun repall(): Int {
-       //birinchi amalni tanlab beradi
+        //birinchi amalni tanlab beradi
         var d1 = "+"
         var a1 = ran(0, 3)
         when (a1) {
@@ -29,10 +31,10 @@ class MainActivity2 : AppCompatActivity() {
             1 -> d1 = "-"
             2 -> d1 = "*"
         }
-        var savol21=ran(1,20)
-        var savol22=ran(1,20)
-        var savol32 =ran(1,20)
-         var gl = 0
+        var savol21 = ran(1, 20)
+        var savol22 = ran(1, 20)
+        var savol32 = ran(1, 20)
+        var gl = 0
         //birinchi 2son yigindisi
         if (d1.equals("+")) {
             gl = savol21 + savol22
@@ -42,7 +44,7 @@ class MainActivity2 : AppCompatActivity() {
             gl = savol21 * savol22
         }
         //ikkinchi amalni tanlab beradi
-        var  d2= "+"
+        var d2 = "+"
         var a2 = ran(0, 3)
         when (a2) {
             0 -> d2 = "+"
@@ -64,13 +66,14 @@ class MainActivity2 : AppCompatActivity() {
                 }
             }
         }
-        san21.text =savol21.toString()
-        san22.text= savol22.toString()
-        san23.text=savol32.toString()
-        amal21.text= d1
-        amal22.text= d2
+        san21.text = savol21.toString()
+        san22.text = savol22.toString()
+        san23.text = savol32.toString()
+        amal21.text = d1
+        amal22.text = d2
         return gl
     }
+
     //togri va notogri javoblarni qoyip beradi
     fun asosiy() {
         var javob21 = 0
@@ -109,6 +112,7 @@ class MainActivity2 : AppCompatActivity() {
         bottom223.text = javob23.toString()
         bottom224.text = javob24.toString()
     }
+
     //tre fols tekshiradi
     fun trueFalse(son: Int): Boolean {
         return tJ == son
@@ -119,35 +123,44 @@ class MainActivity2 : AppCompatActivity() {
         when (it) {
             bottom221 -> {
                 aktiv(trueFalse(bottom221.text.toString().toInt()))
-                onRestart()
+                onResume()
             }
             bottom222 -> {
                 aktiv(trueFalse(bottom222.text.toString().toInt()))
-                onRestart()
+                onResume()
             }
             bottom223 -> {
                 aktiv(trueFalse(bottom223.text.toString().toInt()))
-                onRestart()
+                onResume()
             }
             bottom224 -> {
                 aktiv(trueFalse(bottom224.text.toString().toInt()))
-                onRestart()
+                onResume()
             }
         }
     }
+
     //togri bolsa hato bolsa ochko yozadi
-    var soni =0
+    var soni = 0
     fun aktiv(uu: Boolean) {
-        if(uu){
+        if (uu) {
             soni++
-        }else{
+        } else {
             soni--
         }
-        soni12.text= soni.toString()
+        soni12.text = soni.toString()
     }
+
+    override fun onResume() {
+        super.onResume()
+        loginName2.text = intent.getStringExtra("n1me")
+        tJ = repall()
+        asosiy()
+    }
+
     override fun onRestart() {
         loginName2.text = intent.getStringExtra("n1me")
-        tJ=repall()
+        tJ = repall()
         asosiy()
         super.onRestart()
     }

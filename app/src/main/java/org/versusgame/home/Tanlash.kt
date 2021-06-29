@@ -11,6 +11,8 @@ class Tanlash : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_tanlash)
+        var nn= Intent(this,RecyleActivity::class.java)
+        startActivity(nn)
     }
 
     fun onClikBontton(it: View) {

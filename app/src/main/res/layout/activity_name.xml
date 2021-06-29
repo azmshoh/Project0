@@ -17,7 +17,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.5" />
+        app:layout_constraintGuide_percent="0.6" />
+
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/lineVertikal05"
@@ -32,6 +33,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/line02"
+        android:id="@+id/nameLayout"
         >
         <com.google.android.material.textfield.TextInputEditText
         android:id="@+id/name"
@@ -44,20 +46,30 @@
         android:padding="14dp"
         android:background="@drawable/name"/>
     </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/nameLayout"
+        android:id="@+id/vaqtLayaut"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vaqt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="14dp"
+            android:hint="Time"
+            android:textColor="@color/black"
+            android:inputType="number"
+            android:padding="14dp"
+            android:background="@drawable/name"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
-        android:onClick="onClikBotton2"
-        android:id="@+id/play1"
-        android:layout_width="85dp"
-        android:layout_height="48dp"
-        android:text="oson"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/play2"
-        app:layout_constraintTop_toTopOf="@id/line05"
-        />
-    <Button
-        android:onClick="onClikBotton2"
-        android:id="@+id/play2"
+        android:id="@+id/play"
         android:layout_width="85dp"
         android:layout_height="48dp"
         android:text="orta"
@@ -65,16 +77,7 @@
         app:layout_constraintEnd_toEndOf="@id/lineVertikal05"
         app:layout_constraintTop_toTopOf="@id/line05"
         />
-    <Button
-        android:onClick="onClikBotton2"
-    android:id="@+id/play3"
-    android:layout_width="85dp"
-    android:layout_height="48dp"
-    android:text="qiyin"
-    app:layout_constraintStart_toEndOf="@id/play2"
-    app:layout_constraintEnd_toEndOf="parent"
-    app:layout_constraintTop_toTopOf="@id/line05"
-    />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
